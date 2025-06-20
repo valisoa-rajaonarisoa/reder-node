@@ -35,7 +35,7 @@ async function whitelistDomains() {
       }
     );
     console.log("✅ Domains whitelistés:", response.data);
-  } catch (err) {
+  } catch (err:any) {
     console.error("❌ Erreur whitelistage:", err.response?.data || err);
   }
 }
@@ -94,7 +94,7 @@ async function sendMessage(recipientId:any, messagePayload:any) {
       }
     );
     console.log("✅ Message envoyé:", response.data);
-  } catch (error) {
+  } catch (error:any) {
     console.error("❌ Erreur envoi message:", error.response?.data || error);
   }
 }
